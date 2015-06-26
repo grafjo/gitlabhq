@@ -85,6 +85,7 @@ class Project < ActiveRecord::Base
   has_one :buildkite_service, dependent: :destroy
   has_one :bamboo_service, dependent: :destroy
   has_one :teamcity_service, dependent: :destroy
+  has_one :drone_service, dependent: :destroy
   has_one :pushover_service, dependent: :destroy
   has_one :jira_service, dependent: :destroy
   has_one :redmine_service, dependent: :destroy
